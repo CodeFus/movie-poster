@@ -1,0 +1,73 @@
+body{
+    background-image: url(../img/trees.jpg);/*added back ground image of the forests*/
+    background-repeat: no-repeat;/*enable the image to adjust as it is disabling repeat*/
+    background-position: center;/*command to center the image*/
+    /*giving font color white and font-family monospace*/
+    color: white;
+    font-family: monospace;
+}
+header{
+    /*
+    given heigth 150px of the header part
+    used align-items and justify-content to align paragraph content vertically and horizontally 
+    */
+    display: flex;
+    height: 150px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+section.movie-title{
+    /*
+    making the section flex by using display : flex;
+    making font-size = 100px
+    aligning text vertically and horizontally by using justify-content and align-items
+    */
+    display: flex;
+    height: 150px;
+    font-size: 100px;
+    text-decoration: solid;
+    justify-content: center;
+    align-items: center;
+}
+section.grid-usage{
+
+    margin-top: 60px;/*making margin distance from the top section equal to 60px*/
+    display: grid;
+    /*This command sets up a grid container with three equally sized columns using the "fr" unit.*/
+    grid-template-columns: repeat(3, 1fr);
+    /*gap between equally sized columns = 10px*/
+    gap: 10px; /* value to set the gap between columns */
+    justify-content: center;
+}
+.box {
+    /*give shadow to text placed 1.2px towards left and same towards top*/
+    text-shadow: 1.2px 1.2px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  div.first-div{margin-top: 30px;}
+  div.first-div>p{
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  div.second-div{
+    /*font style equals = 20px
+    same command justify-content and align-items to adjusts text
+    both vertically and horizontally
+    */
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
